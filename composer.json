@@ -1,0 +1,19 @@
+{
+    "name": "trihydera/file",
+    "description": "File stuff",
+    "type": "library",
+    "license": "GPL-2.0-only",
+    "autoload": {
+        "psr-4": {
+            "Trihydera\\File\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "TriHydera",
+            "email": "39857764+TriHydera@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
