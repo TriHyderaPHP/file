@@ -1,7 +1,17 @@
 <?php
-namespace TriHydera\File;
+namespace Trihydera\File;
 
+/**
+ * Class FileTypes
+ * 
+ * Defines different file types along with their categories and purposes.
+ */
 class FileTypes {
+    /**
+     * Array containing file types with their categories and purposes.
+     * 
+     * @var array
+     */
     public $types = [
         'exe'   => ['category' => 'Windows', 'purpose' => 'Executable file'],
         'msi'   => ['category' => 'Windows', 'purpose' => 'Windows Installer Package'],

@@ -1,0 +1,5 @@
+Namespaces, phpdoc and README
+
+- [Change] Changed namespace to the composer format
+- [New] Added PHPDoc to src classes
+- [New] New readme with docs
