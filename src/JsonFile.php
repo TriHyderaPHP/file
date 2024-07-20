@@ -17,13 +17,6 @@ class JsonFile
      */
     public function read($file)
     {
-        // Sanitize the file path
-        $file = realpath($file);
-
-        if ($file === false || strpos($file, __DIR__) !== 0) {
-            throw new \Exception('Invalid file path');
-        }
-
         $contents = file_exists($file) ? file_get_contents($file) : '[]';
         return json_decode($contents, true);
     }
@@ -37,13 +30,6 @@ class JsonFile
      */
     public function write($file, $data)
     {
-        // Sanitize the file path
-        $file = realpath($file);
-
-        if ($file === false || strpos($file, __DIR__) !== 0) {
-            throw new \Exception('Invalid file path');
-        }
-
         file_put_contents($file, json_encode($data));
     }
 }
