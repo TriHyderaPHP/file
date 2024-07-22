@@ -1,15 +1,17 @@
 <?php
+
 namespace Trihydera\File;
 
 /**
  * Class FileTypes
- * 
+ *
  * Defines different file types along with their categories and purposes.
  */
-class FileTypes {
+class FileTypes
+{
     /**
      * Array containing file types with their categories and purposes.
-     * 
+     *
      * @var array
      */
     public $types = [
@@ -25,4 +27,3 @@ class FileTypes {
         'mp3'   => ['category' => 'Audio', 'purpose' => 'MP3 Audio File']
     ];
 }
-?>
