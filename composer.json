@@ -1,6 +1,6 @@
 {
     "name": "trihydera/file",
-    "description": "File stuff",
+    "description": "File tools for getting file info and working with json files",
     "type": "library",
     "license": "GPL-2.0-only",
     "autoload": {
