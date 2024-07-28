@@ -14,7 +14,6 @@ class JsonFile
      *
      * @param string $file The path to the JSON file.
      * @return array The decoded JSON data.
-     * @throws \Exception If the file path is invalid.
      */
     public function read($file)
     {
@@ -27,7 +26,6 @@ class JsonFile
      *
      * @param string $file The path to the JSON file.
      * @param array $data The data to be encoded as JSON and written to the file.
-     * @throws \Exception If the file path is invalid.
      */
     public function write($file, $data)
     {

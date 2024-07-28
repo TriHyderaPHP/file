@@ -26,7 +26,7 @@ class FileInfo
      *
      * @return array An array containing details of files in the directory.
      */
-    public function getInfo()
+    public function scan()
     {
         $details = [];
         $this->listFilesRecursively($this->dir, $details);
@@ -59,7 +59,7 @@ class FileInfo
                 $formattedSize = $this->formatSize($size);
                 $shortCode = substr($hash, 2, 4) . substr($hash, 10, 4);
 
-                $details[$file] = [
+                $details[] = [
                     'id' => $shortCode,
                     'name' => $file,
                     'modified' => date('Y-m-d H:i', $modified),

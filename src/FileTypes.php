@@ -12,7 +12,7 @@ class FileTypes
     /**
      * Array containing file types with their categories and purposes.
      *
-     * @var array
+     * @var array List of file types
      */
     public $types = [
         'exe'   => ['category' => 'Windows', 'purpose' => 'Executable file'],
